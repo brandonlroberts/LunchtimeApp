@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using LunchApp.Models;
+using LunchApp.Models.Base;
 
 namespace LunchApp.Controllers
 {
@@ -12,32 +12,38 @@ namespace LunchApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var restaurants = GetBaseRestaurants(); 
+
+            return View(restaurants);
+        }
+        public static IEnumerable<BaseRestaurants>  GetBaseRestaurants()
+        {
+            return new List<BaseRestaurants>
+            { 
+                new BaseRestaurants {Name = "Tokyo"},
+                new BaseRestaurants {Name = "Buffalo Wild Wings"},
+                new BaseRestaurants {Name = "Five Guys"},
+                new BaseRestaurants {Name = "BJ's"},
+                new BaseRestaurants {Name = "Frisch's"},
+            };
         }
 
-        public IActionResult About()
+        public IActionResult PickRandom()
         {
-            ViewData["Message"] = "Your application description page.";
+            var restaurants = GetBaseRestaurants();
+            Random random = new Random();
+            var names = new List<string>();
 
-            return View();
-        }
+            foreach (var item in restaurants)
+            {
+                names.Add(item.Name);
+            }
+            
+            int r = random.Next(names.Count);
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
+            var selection = (string)names[r];
 
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View("PickRandom", selection);
         }
     }
 }
