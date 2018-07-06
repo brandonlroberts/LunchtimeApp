@@ -36,7 +36,6 @@ namespace LunchApp.Controllers
             return rvm;
         }
 
-        [HttpPost]
         public IActionResult PickRandom(RestaurantsViewModel restaurant)
         {
 
