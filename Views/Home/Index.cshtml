@@ -3,20 +3,29 @@
  
 <form asp-controller="Home" asp-action="PickRandom" method="post" class="form=horizontal" role="form">
     <fieldset class="form-group">
-        <h3>Fart salad</h3>
-        <legend class="col-sm-3 control-label"></legend>
-        <div class="checkbox checkboxlist col-sm-9">
-            @{
-                for (int i = 0; i < Model.Restaurants.Count(); i++)
-                {
-                    <input asp-for="@Model.Restaurants[i].Name" type="label"/>
-                    <input asp-for="@Model.Restaurants[i].IsSelected" type="checkbox"/>
-                    <input asp-for="@Model.Restaurants[i].Name" type="hidden"/>
-                    <input asp-for="@Model.Restaurants[i].Id" type="hidden"/>
-                    <input asp-for="@Model.Restaurants[i].LastSelected" type="hidden"/>
-                }
-            }
+        <h3>Just pick somewhere!</h3>
+
+        <div class="container">           
+            <table class="table">
+                <thead>
+                    @{
+                        for (int i = 0; i < Model.Restaurants.Count(); i++)
+                        {
+                            <tr>
+
+                                <th>@Html.DisplayFor(model => model.Restaurants[i].Name)</th>
+                                <th>@Html.CheckBoxFor(model => model.Restaurants[i].IsSelected)</th>
+                                <input asp-for="@Model.Restaurants[i].Name" type="hidden"/>
+                                <input asp-for="@Model.Restaurants[i].Id" type="hidden"/>
+                                <input asp-for="@Model.Restaurants[i].LastSelected" type="hidden"/>
+                            </tr>
+                        }
+                    }
+                </thead>
+                </tbody>
+            </table>
         </div>
+
         <div class="checkbox checkboxlist col-sm-9">
             <input id="Submit" type="submit" value="submit"/>
         </div>
