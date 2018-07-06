@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LunchApp.Dal;
+using LunchApp.Dal.Interfaces;
+using LunchApp.Dal.Repos;
 using LunchApp.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,6 +38,7 @@ namespace LunchApp
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddTransient<IRestaurantRepo, RestaurantRepo>();
 
             var connection = @"Server=tcp:snapper.database.windows.net,1433;Initial Catalog=snapper;Persist Security Info=False;User ID=brandonlroberts;Password=Leerob7883!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));

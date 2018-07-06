@@ -7,16 +7,18 @@ using Microsoft.AspNetCore.Mvc;
 using LunchApp.Models;
 using LunchApp.Models.ViewModels;
 using LunchApp.Dal;
+using LunchApp.Dal.Interfaces;
+using LunchApp.Dal.Repos;
 
 namespace LunchApp.Controllers
 {
     public class HomeController : Controller
     {
-        ApplicationDbContext _context;
+        private readonly IRestaurantRepo _restaurantRepo;
 
-        public HomeController(ApplicationDbContext context)
+        public HomeController(IRestaurantRepo restaurantRepo)
         {
-            _context = context;
+            _restaurantRepo = restaurantRepo;
         }
 
         public IActionResult Index()
@@ -30,7 +32,7 @@ namespace LunchApp.Controllers
         {
             var rvm = new RestaurantsViewModel
             {
-                Restaurants = _context.Set<Restaurant>().ToList()
+                Restaurants = _restaurantRepo.GetListOfRestaurants()
             };            
 
             return rvm;
@@ -50,7 +52,13 @@ namespace LunchApp.Controllers
                     names.Add(item.Name);
                 }
             }
-            
+
+            if (names.Count < 1)
+            {
+                ModelState.AddModelError("IsSelected", "You must select at least one restaurant...");
+                var reload = GetRestaurantsViewModel();
+                return View("Index", reload);
+            }
             int r = random.Next(names.Count);
 
             var selection = (string)names[r];

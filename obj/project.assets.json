@@ -12220,28 +12220,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/brandonroberts/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\brandonroberts\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/LunchApp.csproj",
+      "projectUniqueName": "C:\\Users\\brandonroberts\\GitHub\\LunchtimeApp\\LunchApp.csproj",
       "projectName": "LunchApp",
-      "projectPath": "/Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/LunchApp.csproj",
-      "packagesPath": "/Users/brandonroberts/.nuget/packages/",
-      "outputPath": "/Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj",
+      "projectPath": "C:\\Users\\brandonroberts\\GitHub\\LunchtimeApp\\LunchApp.csproj",
+      "packagesPath": "C:\\Users\\brandonroberts\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\brandonroberts\\GitHub\\LunchtimeApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/brandonroberts/.config/NuGet/NuGet.Config"
+        "C:\\Users\\brandonroberts\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12258,28 +12260,28 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.1.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.1"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.1.1"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )",
+            "autoReferenced": true
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.1.0, )",
+            "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           }
         },
         "imports": [

@@ -61,3 +61,33 @@
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.Views.pdb
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.csproj.CopyComplete
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.csprojResolveAssemblyReference.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\bin\Debug\netcoreapp2.1\LunchApp.deps.json
+C:\Users\brandonroberts\GitHub\LunchtimeApp\bin\Debug\netcoreapp2.1\LunchApp.runtimeconfig.json
+C:\Users\brandonroberts\GitHub\LunchtimeApp\bin\Debug\netcoreapp2.1\LunchApp.runtimeconfig.dev.json
+C:\Users\brandonroberts\GitHub\LunchtimeApp\bin\Debug\netcoreapp2.1\LunchApp.dll
+C:\Users\brandonroberts\GitHub\LunchtimeApp\bin\Debug\netcoreapp2.1\LunchApp.pdb
+C:\Users\brandonroberts\GitHub\LunchtimeApp\bin\Debug\netcoreapp2.1\LunchApp.Views.dll
+C:\Users\brandonroberts\GitHub\LunchtimeApp\bin\Debug\netcoreapp2.1\LunchApp.Views.pdb
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.csprojAssemblyReference.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.csproj.CoreCompileInputs.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.RazorAssemblyInfo.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.RazorAssemblyInfo.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.AssemblyInfoInputs.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.AssemblyInfo.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.TagHelpers.input.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.TagHelpers.output.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.RazorCoreGenerate.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\PickRandom.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.RazorTargetAssemblyInfo.cache
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.RazorTargetAssemblyInfo.cs
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.Views.pdb
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.dll
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.pdb
+C:\Users\brandonroberts\GitHub\LunchtimeApp\obj\Debug\netcoreapp2.1\LunchApp.csproj.CopyComplete
