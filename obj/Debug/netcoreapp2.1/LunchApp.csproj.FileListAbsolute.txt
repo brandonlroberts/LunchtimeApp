@@ -31,7 +31,6 @@
 /Users/brandonroberts/Documents/Custom Applications/LunchApp/obj/Debug/netcoreapp2.1/LunchApp.dll
 /Users/brandonroberts/Documents/Custom Applications/LunchApp/obj/Debug/netcoreapp2.1/LunchApp.pdb
 /Users/brandonroberts/Documents/Custom Applications/LunchApp/obj/Debug/netcoreapp2.1/LunchApp.csproj.CopyComplete
-/Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.csprojAssemblyReference.cache
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.csproj.CoreCompileInputs.cache
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.RazorAssemblyInfo.cache
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.RazorAssemblyInfo.cs
@@ -61,3 +60,4 @@
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/bin/Debug/netcoreapp2.1/LunchApp.Views.pdb
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.Views.pdb
 /Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.csproj.CopyComplete
+/Users/brandonroberts/Documents/Custom Applications/LunchtimeApp/obj/Debug/netcoreapp2.1/LunchApp.csprojResolveAssemblyReference.cache

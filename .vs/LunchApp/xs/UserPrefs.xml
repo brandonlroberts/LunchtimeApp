@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{A66C38EE-C6F0-4577-BD6D-36089EFBBC73}|Default">
   <MonoDevelop.Ide.ItemProperties.LunchApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dal/Repo/Interfaces/IRestaurantRepo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Index.cshtml">
     <Files>
       <File FileName="Views/Home/Index.cshtml" Line="16" Column="78" />
       <File FileName="Controllers/HomeController.cs" Line="19" Column="10" />
-      <File FileName="Models/ViewModels/RestaurantsViewModel.cs" Line="8" Column="62" />
+      <File FileName="Models/ViewModels/RestaurantsViewModel.cs" Line="8" Column="37" />
       <File FileName="Models/Restaurants.cs" Line="13" Column="2" />
-      <File FileName="Dal/Repo/RestaurantsRepo.cs" Line="14" Column="53" />
-      <File FileName="Dal/Repo/Interfaces/IRestaurantRepo.cs" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
