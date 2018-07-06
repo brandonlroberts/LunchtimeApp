@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using LunchApp.Models.Base;
+using LunchApp.Models;
 
 namespace LunchApp.Controllers
 {
@@ -12,25 +12,29 @@ namespace LunchApp.Controllers
     {
         public IActionResult Index()
         {
-            var restaurants = GetBaseRestaurants(); 
+            var Restaurant = GetRestaurants(); 
 
-            return View(restaurants);
+            return View(Restaurant);
         }
-        public static IEnumerable<BaseRestaurants>  GetBaseRestaurants()
+        public static IEnumerable<Restaurant>  GetRestaurants()
         {
-            return new List<BaseRestaurants>
+            return new List<Restaurant>
             { 
-                new BaseRestaurants {Name = "Tokyo"},
-                new BaseRestaurants {Name = "Buffalo Wild Wings"},
-                new BaseRestaurants {Name = "Five Guys"},
-                new BaseRestaurants {Name = "BJ's"},
-                new BaseRestaurants {Name = "Frisch's"},
+                new Restaurant {Name = "Tokyo"},
+                new Restaurant {Name = "Buffalo Wild Wings"},
+                new Restaurant {Name = "Five Guys"},
+                new Restaurant {Name = "BJ's"},
+                new Restaurant {Name = "Skyline"},
+                new Restaurant {Name = "Chipotle"},
+                new Restaurant {Name = "Wings and Rings"},
+                new Restaurant {Name = "Larosa's"},
+                new Restaurant {Name = "Friendly Stop"},
             };
         }
 
         public IActionResult PickRandom()
         {
-            var restaurants = GetBaseRestaurants();
+            var restaurants = GetRestaurants();
             Random random = new Random();
             var names = new List<string>();
 
