@@ -10,6 +10,6 @@ namespace LunchApp.Models.ViewModels
     
     public class RestaurantsViewModel
     {
-       public IQueryable<Restaurant> Restaurants { get; set; } 
+       public List<Restaurant> Restaurants { get; set; } 
     }
 }

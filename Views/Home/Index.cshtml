@@ -1,24 +1,24 @@
 ﻿@model LunchApp.Models.ViewModels.RestaurantsViewModel
 
-<form asp-action="PickRandom">
-    
-    <br>
-
-    <table class="table table-bordered table-responsive table-hover">  
-        <tr>  
-            <th>Name</th>  
-            <th>Selected</th>
-        </tr>  
-        @foreach (var d in Model.Restaurants)  
-        {  
-        <tr>
-            <td>@d.Name</td>
-            <td><input type="checkbox" asp-for="@d.IsSelected" checked/></td>
-        </tr>  
-        }  
-    </table> 
-    <br> 
-        <button type="submit" value="Save" class="btn btn-primary">
-        Random
-    </button>
-</form>
+ 
+<form asp-controller="Home" asp-action="PickRandom" method="post" class="form=horizontal" role="form">
+    <fieldset class="form-group">
+        <h3>Fart salad</h3>
+        <legend class="col-sm-3 control-label"></legend>
+        <div class="checkbox checkboxlist col-sm-9">
+            @{
+                for (int i = 0; i < Model.Restaurants.Count(); i++)
+                {
+                    <input asp-for="@Model.Restaurants[i].Name" type="label"/>
+                    <input asp-for="@Model.Restaurants[i].IsSelected" type="checkbox"/>
+                    <input asp-for="@Model.Restaurants[i].Name" type="hidden"/>
+                    <input asp-for="@Model.Restaurants[i].Id" type="hidden"/>
+                    <input asp-for="@Model.Restaurants[i].LastSelected" type="hidden"/>
+                }
+            }
+        </div>
+        <div class="checkbox checkboxlist col-sm-9">
+            <input id="Submit" type="submit" value="submit"/>
+        </div>
+    </fieldset>
+</form> 

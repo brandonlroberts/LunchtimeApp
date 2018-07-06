@@ -30,25 +30,26 @@ namespace LunchApp.Controllers
         {
             var rvm = new RestaurantsViewModel
             {
-                Restaurants = _context.Set<Restaurant>()
+                Restaurants = _context.Set<Restaurant>().ToList()
             };            
 
             return rvm;
         }
 
-        public IActionResult PickRandom(RestaurantsViewModel restaurant)
+        [HttpPost]
+        public IActionResult PickRandom(List<Restaurant> restaurants)
         {
 
             Random random = new Random();
             var names = new List<string>();
 
-            foreach (var item in restaurant.Restaurants)
-            {
-                if (item.IsSelected)
-                {
-                    names.Add(item.Name);
-                }
-            }
+            // foreach (var item in restaurant)
+            // {
+            //     if (item.IsSelected)
+            //     {
+            //         names.Add(item.Name);
+            //     }
+            // }
             
             int r = random.Next(names.Count);
 
