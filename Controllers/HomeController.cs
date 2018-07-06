@@ -43,13 +43,13 @@ namespace LunchApp.Controllers
             Random random = new Random();
             var names = new List<string>();
 
-            // foreach (var item in restaurant)
-            // {
-            //     if (item.IsSelected)
-            //     {
-            //         names.Add(item.Name);
-            //     }
-            // }
+            foreach (var item in restaurants)
+            {
+                if (item.IsSelected)
+                {
+                    names.Add(item.Name);
+                }
+            }
             
             int r = random.Next(names.Count);
 
