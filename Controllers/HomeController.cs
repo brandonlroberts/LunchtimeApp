@@ -5,42 +5,50 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using LunchApp.Models;
+using LunchApp.Models.ViewModels;
+using LunchApp.Dal;
 
 namespace LunchApp.Controllers
 {
     public class HomeController : Controller
     {
+        ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            var Restaurant = GetRestaurants(); 
+            var restaurant = GetRestaurantsViewModel(); 
 
-            return View(Restaurant);
-        }
-        public static IEnumerable<Restaurant>  GetRestaurants()
-        {
-            return new List<Restaurant>
-            { 
-                new Restaurant {Name = "Tokyo"},
-                new Restaurant {Name = "Buffalo Wild Wings"},
-                new Restaurant {Name = "Five Guys"},
-                new Restaurant {Name = "BJ's"},
-                new Restaurant {Name = "Skyline"},
-                new Restaurant {Name = "Chipotle"},
-                new Restaurant {Name = "Wings and Rings"},
-                new Restaurant {Name = "Larosa's"},
-                new Restaurant {Name = "Friendly Stop"},
-            };
+            return View(restaurant);
         }
 
-        public IActionResult PickRandom()
+        public RestaurantsViewModel GetRestaurantsViewModel()
         {
-            var restaurants = GetRestaurants();
+            var rvm = new RestaurantsViewModel
+            {
+                Restaurants = _context.Set<Restaurant>()
+            };            
+
+            return rvm;
+        }
+
+        [HttpPost]
+        public IActionResult PickRandom(RestaurantsViewModel restaurant)
+        {
+
             Random random = new Random();
             var names = new List<string>();
 
-            foreach (var item in restaurants)
+            foreach (var item in restaurant.Restaurants)
             {
-                names.Add(item.Name);
+                if (item.IsSelected)
+                {
+                    names.Add(item.Name);
+                }
             }
             
             int r = random.Next(names.Count);

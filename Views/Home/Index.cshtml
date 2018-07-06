@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LunchApp.Models.Restaurant>
+﻿@model LunchApp.Models.ViewModels.RestaurantsViewModel
 
 <form asp-action="PickRandom">
     
@@ -7,12 +7,14 @@
     <table class="table table-bordered table-responsive table-hover">  
         <tr>  
             <th>Name</th>  
+            <th>Selected</th>
         </tr>  
-        @foreach (var d in Model)  
+        @foreach (var d in Model.Restaurants)  
         {  
-            <tr>  
-                <td>@d.Name</td>  
-            </tr>  
+        <tr>
+            <td>@d.Name</td>
+            <td><input type="checkbox" asp-for="@d.IsSelected" checked/></td>
+        </tr>  
         }  
     </table> 
     <br> 
